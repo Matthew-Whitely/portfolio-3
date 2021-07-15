@@ -1,0 +1,41 @@
+@import "setup";
+@import "header";
+@import "profile";
+@import "project";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 125%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  width: 90%;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  margin: 0 20px;
+  line-height: 1.6;
+  font-family: $family;
+}
+h1 {
+  font-size: 4.2rem;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

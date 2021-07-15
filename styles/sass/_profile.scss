@@ -1,0 +1,17 @@
+@import "variables";
+.profileHeader {
+  background: white;
+  opacity: 99%;
+  min-height: 100vh;
+
+  h1 {
+    color: $primary1;
+  }
+  p {
+    color: $primary1;
+  }
+}
+
+.profileText {
+  font-size: 1.8rem;
+}

@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  background-color: $primary2;
+  align-self: flex-end;
+  width: 100%;
+  position: sticky;
+
+  p {
+    color: $primary1;
+    padding: 20px 0;
+  }
+}
