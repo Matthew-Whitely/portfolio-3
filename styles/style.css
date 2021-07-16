@@ -240,7 +240,7 @@ html {
 }
 
 .indexHeader::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -342,6 +342,10 @@ nav a:hover {
           text-decoration: #263547;
 }
 
+nav p {
+  margin-left: 40px;
+}
+
 .getInTouch {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +385,7 @@ nav a:hover {
 
 .profileText {
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .projectHeader {
@@ -398,43 +403,25 @@ nav a:hover {
   color: #263547;
 }
 
-.projectFlexContainer {
+.carouselFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: solid #FDCF43 3px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  padding: 20px;
-  margin-bottom: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.projectFlexColumn {
-  -webkit-box-shadow: rgba(4, 128, 218, 0.6) 0px 10px 90px;
-          box-shadow: rgba(4, 128, 218, 0.6) 0px 10px 90px;
-  padding: 10px;
-  margin-bottom: 40px;
-  width: 48%;
+.carouselFlex img {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.projectFlexColumn img {
-  display: block;
-}
-
-.projectFlexColumn p {
-  text-align: left;
+.carouselText p {
   color: #FDCF43;
-  padding: 20px 5px;
-}
-
-.projectFlexColumn a {
-  color: #FDCF43;
+  text-align: center;
 }
 
 .icon {
@@ -443,9 +430,14 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 10px;
+}
+
+.icon i {
+  margin-left: 40px;
 }
 
 .live {
@@ -470,6 +462,55 @@ nav a:hover {
 .live a {
   padding: 0 20px;
   margin: 0;
+  color: #FDCF43;
+}
+
+.center {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #263547;
+}
+
+.center p {
+  color: #FDCF43;
+}
+
+h3 {
+  letter-spacing: 5px;
+  color: #FDCF43;
+  font-size: 2.8rem;
+}
+
+.skillBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.skillBox p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -25px;
+}
+
+.skill {
+  background: #FDCF43;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.skillLevel {
+  background: #263547;
+  width: 100%;
+  height: 10px;
 }
 
 footer {

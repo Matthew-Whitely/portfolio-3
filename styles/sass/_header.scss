@@ -1,113 +1,107 @@
-@import 'variables';
+@import "variables";
 
-.indexHeader{
+.indexHeader {
   position: relative;
 }
-.indexHeader::before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-image:url("../images/tractor6-1920.jpg");
-background-repeat: no-repeat;
-  background-position:right;
-  filter:grayscale(1)
-
+.indexHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/tractor6-1920.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  filter: grayscale(1);
 }
-.headerFlex{
-  display:flex;
+.headerFlex {
+  display: flex;
   // flex-direction: row-reverse;
-  width:100%;
- 
+  width: 100%;
 }
-.headerText{
-  width:75%;
+.headerText {
+  width: 75%;
   opacity: 99%;
-  color:$primary1;
-  font-weight:$fontweightBold;
+  color: $primary1;
+  font-weight: $fontweightBold;
   height: 100vh;
-  padding-top:100px;
+  padding-top: 100px;
   padding-left: 70px;
 
   // justify-self: center
   // background-color:$primary1;
 }
-.indexText{
+.indexText {
   font-size: 2.2rem;
 }
-.overlay{
-  background:$primary2;
+.overlay {
+  background: $primary2;
   opacity: 70%;
   width: 25%;
   height: 100vh;
 }
 
-.overlayText{
-  display:flex;
+.overlayText {
+  display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top:70px;
-  h2{
-    color:$primary1;
-    padding:10px 0;
+  padding-top: 70px;
+  h2 {
+    color: $primary1;
+    padding: 10px 0;
     font-weight: $fontweightBold;
-    font-size:2.2rem;
+    font-size: 2.2rem;
   }
-  p{
-font-size:1.8rem;
-color:$primary1;
+  p {
+    font-size: 1.8rem;
+    color: $primary1;
   }
-  
 }
 
-.circle{
+.circle {
   align-self: center;
-  border-radius:50%;
-  width:150px;
-  height:150px;
-  background:$primary1;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: $primary1;
 }
 
-nav{
-  padding-top:100px;
+nav {
+  padding-top: 100px;
 
-  li{
-    margin-top:10px;
+  li {
+    margin-top: 10px;
     transition: transform 250ms;
-    width:50px;
-
+    width: 50px;
   }
- a{ color:$primary1;
+  a {
+    color: $primary1;
+  }
+  li:hover {
+    transform: translateX(20%);
+  }
+  a:hover {
+    text-decoration: $primary1;
+  }
+  p {
+    margin-left: 40px;
+  }
 }
-li:hover{
-  transform: translateX(20%);
 
-}
-a:hover{
-
-  text-decoration: $primary1;
-}
-
-}
-
-
-.getInTouch{
-  display:flex;
-  i{
+.getInTouch {
+  display: flex;
+  i {
     font-size: 2rem;
     // color:$primary1
   }
-  li{
-    margin-right:20px;
+  li {
+    margin-right: 20px;
   }
-
 }
-.getInTouch li:hover{
+.getInTouch li:hover {
   transform: scale(1.2);
-  
 }
-.getInTouch i:hover{
-  color:ghostwhite;
+.getInTouch i:hover {
+  color: ghostwhite;
 }
