@@ -1,0 +1,29 @@
+@media (max-width: 1330px) {
+  //HEADER
+  .overlayText h2 {
+    font-size: 1.4rem;
+  }
+  .overlayText p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .getInTouch {
+    li {
+      margin-right: 7px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .hamburger {
+    display: block;
+    i {
+      cursor: pointer;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}

@@ -105,3 +105,14 @@ nav {
 .getInTouch i:hover {
   color: ghostwhite;
 }
+
+//figuring out nav for responsive
+
+.hamburger {
+  color: black;
+  opacity: 99%;
+  font-size: 2rem;
+  text-align: right;
+  margin: 0 60px;
+  display: none;
+}

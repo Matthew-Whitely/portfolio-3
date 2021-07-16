@@ -369,6 +369,15 @@ nav p {
   color: ghostwhite;
 }
 
+.hamburger {
+  color: black;
+  opacity: 99%;
+  font-size: 2rem;
+  text-align: right;
+  margin: 0 60px;
+  display: none;
+}
+
 .profileHeader {
   background: white;
   opacity: 99%;
@@ -511,6 +520,33 @@ h3 {
   background: #263547;
   width: 100%;
   height: 10px;
+}
+
+@media (max-width: 1330px) {
+  .overlayText h2 {
+    font-size: 1.4rem;
+  }
+  .overlayText p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .getInTouch li {
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 940px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger i {
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
 }
 
 footer {
